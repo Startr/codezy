@@ -55,7 +55,11 @@ Thank you for considering contributing to smerge! It's as easy as creating a pul
 
 # License
 
-smerge itself is licenced under the MIT license. Licence for third-party libraries may differ and those licences apply in those cases.
+
+
+RIAC Cloud is licenced under the AGPLv3 and builds on SMERGE.
+SMERGE is licenced under the MIT license. 
+Licence for third-party libraries may differ and those licences apply in those cases.
 
 # etc.
 

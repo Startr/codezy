@@ -226,10 +226,10 @@ def include_sync_button(file, proj_id, me):
         sync_button = ET.fromstring(sync_file)
 
         target = ET.parse(settings.BASE_DIR + file)
-        if target.find(".//block-definition[@s='Post to smerge...']") != None:
+        if target.find(".//block-definition[@s='Post to Codezy...']") != None:
             for scenes in target.findall(".//scene"):
                 for blocks in scenes.findall("blocks"):
-                    for sync_block in blocks.findall("block-definition[@s='Post to smerge...']"):
+                    for sync_block in blocks.findall("block-definition[@s='Post to Codezy...']"):
                         blocks.remove(sync_block)
         for scenes in target.findall(".//scene"):
             scenes.find('blocks').append(sync_button)

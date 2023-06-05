@@ -269,8 +269,8 @@ msgstr ""
 "Seiten noch erreichbar."
 
 #: snapmerge/templates/how_to.html:15
-msgid "How to Smerge..."
-msgstr "How to Smerge..."
+msgid "How to Codezy..."
+msgstr "How to Codezy..."
 
 #: snapmerge/templates/how_to.html:19
 msgid ""
@@ -372,10 +372,10 @@ msgstr ""
 
 #: snapmerge/templates/how_to.html:57
 msgid ""
-"This is done via the corresponding block post to &quot;smerge...&quot; under "
+"This is done via the corresponding block post to &quot;Codezy...&quot; under "
 "Variables. "
 msgstr ""
-"Das erfolgt über den Block post to &quot;smerge...&quot; in der Kategorie "
+"Das erfolgt über den Block post to &quot;Codezy...&quot; in der Kategorie "
 "Variablen."
 
 #: snapmerge/templates/how_to.html:58

@@ -18,7 +18,7 @@
     {% endblock %}
 
 
-    <title>SMERGE</title>
+    <title>Robot in a Can  - Codezy Code - by Startr</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <link rel="icon" href="{%  static 'icon/favicon.ico' %}" sizes="16x16">
     <link rel="icon" type="image/png" href="{%  static 'icon/favicon-32x32.png' %}" sizes="32x32">
@@ -29,12 +29,12 @@
 <body>
     <nav>
         <a href="{% url 'home' %}" class="logo">
-            SMERGE
+            Robot in a Can  - Codezy Code - by Startr
         </a>
         <ul>
             <div class="navlinks">
-                <li><a href="{% url 'howto' %}">How To Smerge</a> </li>
-                <li><a href="{% url 'impressum' %}">Impressum</a> </li>
+                <li><a href="{% url 'howto' %}">Making Codezy Code</a> </li>
+                {% comment %}<li style="display:none"><a href="{% url 'impressum' %}">Impressum</a> </li>{% endcomment %}
                 <li><a onclick="window.history.back()">{% trans "Back" %}</a> </li>
             </div>
         </ul>
@@ -72,11 +72,11 @@
         </div>
 
         <div class="footer-text">
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/manzanillo/smerge"
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/startr/smerge"
                 title="{% trans "GitHub" %}"> <i class="tiny material-icons">explore</i>
                 {%  trans  "GitHub" %}</a>
 
-            <a href="mailto:tilman.michaeli@tum.de" title="{% trans "Contact" %}"> <i
+            <a href="mailto:info@robotinacan.com" title="{% trans "Contact" %}"> <i
                     class="tiny material-icons">email</i> {% trans "Contact" %}</a>
         </div>
     </footer>

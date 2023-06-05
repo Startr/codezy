@@ -306,9 +306,9 @@ class RestoreInfoView(View):
 
             try:
                 send_mail(
-                    _('Your smerge.org projects'),
+                    _('Your projects'),
                     content_text,
-                    'noreply@smerge.org',
+                    'noreply@robotinacan.com',
                     [email],
                     fail_silently=False,
                     html_message=content_html,

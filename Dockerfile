@@ -11,7 +11,8 @@ RUN apt-get install -y \
     libjpeg-dev \
     libfreetype6-dev \
     zlib1g-dev \
-    net-tools
+    net-tools  \
+    bash
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -y nodejs
 # Project Files and Settings
@@ -28,4 +29,5 @@ STOPSIGNAL SIGINT
 RUN chmod +x ./entrypoint.sh
 RUN ./entrypoint.sh
 ENTRYPOINT ["python", "snapmerge/manage.py"]
-CMD ["runserver", "0.0.0.0:8000", "--settings=config.settings_docker"]
+CMD ["runserver", "0.0.0.0:8000", "--settings=config.settings_local"]
+#CMD ["/bin/bash"]

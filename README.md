@@ -72,6 +72,7 @@ We recommend to test the system using a redis docker. Redis is used for handling
 docker run -p 6379:6379 --name some-redis -d redis
 ```
 
+TODO Move redis into our Codezy Docker image
 
 
 # Contributing

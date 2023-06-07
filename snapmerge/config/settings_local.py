@@ -1,6 +1,6 @@
 from .settings_base import *
 
-URL = 'http://127.0.0.1:8000'
+URL = 'https://codezy.robotinacan.com'
 
 SECRET_KEY = '()fvd?-m+=quyxz*_3v+gjg!d)8n0(wbo*k)(0kwtwuryr4nil'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

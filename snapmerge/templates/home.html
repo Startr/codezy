@@ -11,7 +11,7 @@
   <div class="row">
     <img width="75%" heigth="auto" src="{% static "icon/icon.svg" %}" />
 
-    <div class="" style="margin-top: 4rem;">
+    <div class="" style="margin-top: 1rem;">
         <a href="{% url 'open_proj' %}" id="open-btn" name="open" class="btn waves-effect waves-light">
           {% trans "Open existing" %}
         </a>
@@ -20,6 +20,9 @@
           {% trans "Create new" %}
         </a>
     </div>
+  </div>
+  <div class="row">
+    Hey there! Just a quick heads up: you're currently on our special testing server, which means the files you see here might not stay forever, so enjoy exploring!
   </div>
 </div>
 {% endblock %}

@@ -1,6 +1,6 @@
-# 
+# Codezy v0.0.2 
 
-Codezy is a merge tool for school environments and Snap!. It is based on a lot of open source projects including cytoscape.js or Django. It is intended to be simple, beautiful, fast, and easy to use in school environments. A live demo can be found at [Codezy.org](https://Codezy.org)
+Codezy is a merge tool for school environments and Snap!. It is based on a lot of open source projects including [Robot in a Can Snap!](https://snap.robotinacan.com/courses/snaps/)  cytoscape.js and Django. It is intended to be simple, beautiful, fast, and easy to use in school environments. A live demo should be found at [Codezy.org](https://Codezy.org) or [Codezy.RobotInACan.com](https://codezy.robotinacan.com/). 
 
 # Install
 

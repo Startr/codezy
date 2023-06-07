@@ -9,15 +9,42 @@ We recommend using a virtualenv and npm for local deployment. Activate your virt
 
 ## With docker
 
-To deploy Codezy via docker you may use the docker-compose.yml file and run:
+To deploy Codezy via docker you may use our BuildnRun.sh script:
 
-```
-docker-compose build
-docker-compose up
+```bash
+BuildnRun.sh
 ```
 
-```
-docker-compose -f docker-compose.fub.yml build
+This will automaticly run 
+
+```bash
+# OpenCo Build 'n' Run Script
+#!/bin/bash
+# Version 1.0.1
+
+# This simple script builds and runs this directory 's Dockerfile Image
+PROJECTPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+    PROJECT=${PROJECTPATH##*/}
+FULL_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+# Lowecase the branch
+FULL_BRANCH=`echo $FULL_BRANCH|awk '{print tolower($0)}'`
+     BRANCH=${FULL_BRANCH##*/}
+        TAG=$(git describe --always --tag)
+
+echo PROJECTPATH=$PROJECTPATH
+echo     PROJECT=$PROJECT
+echo FULL_BRANCH=$FULL_BRANCH
+echo      BRANCH=$BRANCH
+
+echo docker build -t openco/$PROJECT-$BRANCH:$TAG .
+echo docker tag -f openco/$PROJECT-$BRANCH:$TAG
+echo   openco/$PROJECT-$BRANCH:latest
+docker build -t openco/$PROJECT-$BRANCH:$TAG . \
+  && \
+docker tag openco/$PROJECT-$BRANCH:$TAG \
+ openco/$PROJECT-$BRANCH:latest \
+  && \
+  ./Run.sh
 ```
 
 ## Without docker
@@ -44,6 +71,8 @@ We recommend to test the system using a redis docker. Redis is used for handling
 ```
 docker run -p 6379:6379 --name some-redis -d redis
 ```
+
+
 
 # Contributing
 

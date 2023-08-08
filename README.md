@@ -83,7 +83,7 @@ Thank you for considering contributing to Codezy! It's as easy as creating a pul
 
 
 
-RIAC Cloud is licenced under the AGPLv3 and builds on SMERGE.
+Startr Codezy Code is licenced under the AGPLv3 and builds on SMERGE.
 
 SMERGE is licenced under the MIT license. 
 Licence for third-party libraries may differ and those licences apply in those cases.
